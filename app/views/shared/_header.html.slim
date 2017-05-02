@@ -1,0 +1,28 @@
+.header-content
+  .branding
+    = image_tag "logo.png", class: "logo", alt: "Company Name"
+    h1 class="site-title"
+      a href="#{root_path}" Company
+    small class="site-description" Tagline goes here
+
+  nav.main-navigation
+    button type="button" class="menu-toggle"
+      i.fa.fa-bars
+    ul.menu
+      li.menu-item
+        a href="#" About us
+      li.menu-item
+        a href="#" Services
+      li.menu-item
+        a href="#" Contact us
+
+  .social-links
+    a href="javascript:;" class="facebook" target="_blank"
+      i.fa.fa-facebook
+    a href="javascript:;" class="twitter" target="_blank"
+      i.fa.fa-twitter
+    a href="javascript:;" class="youtube" target="_blank"
+      i.fa.fa-youtube
+    a href="javascript:;" class="skype" target="_blank"
+      i.fa.fa-skype
+

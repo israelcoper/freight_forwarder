@@ -1,0 +1,21 @@
+doctype html
+html lang="en"
+  head
+    title Company
+    = csrf_meta_tags
+
+    = stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload'
+    = javascript_include_tag 'application', 'data-turbolinks-track': 'reload'
+
+  body.slider-collapse
+    #site-content
+      header class="site-header wow fadeInDown"
+        .container
+          = render partial: "shared/header"
+               
+      main class="content"
+        = yield
+
+      footer class="site-footer wow fadeInUp"
+        = render partial: "shared/footer"
+
