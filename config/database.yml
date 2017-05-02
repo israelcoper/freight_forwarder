@@ -1,0 +1,18 @@
+default: &default
+  adapter: postgresql
+  encoding: unicode
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+
+development:
+  <<: *default
+  database: freight_forwarder_development
+
+test:
+  <<: *default
+  database: freight_forwarder_test
+
+production:
+  <<: *default
+  database: <%= ENV['FREIGHT_FORWARDER_DATABASE'] %>
+  username: <%= ENV['FREIGHT_FORWARDER_DATABASE_USERNAME'] %>
+  password: <%= ENV['FREIGHT_FORWARDER_DATABASE_PASSWORD'] %>
