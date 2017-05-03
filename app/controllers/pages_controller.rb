@@ -5,4 +5,7 @@ class PagesController < ApplicationController
     render layout: "home"
   end
 
+  def about_us
+  end
+
 end
