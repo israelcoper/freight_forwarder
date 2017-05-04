@@ -9,11 +9,11 @@ div class="header-content transparent"
     button type="button" class="menu-toggle"
       i.fa.fa-bars
     ul.menu
-      li.menu-item
+      li class="menu-item #{active(about_us_path)}"
         a href="#{about_us_path}" About us
-      li.menu-item
+      li class="menu-item #{active(services_path)}"
         a href="#{services_path}" Services
-      li.menu-item
+      li class="menu-item #{active(contact_us_path)}"
         a href="#{contact_us_path}" Contact us
 
   .social-links
