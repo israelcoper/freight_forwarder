@@ -1,3 +1,36 @@
+.transparent {
+  background: rgba(0, 0, 0, 0.1) !important;
+
+  .site-title, .site-description {
+    color: #FFFFFF;
+  }
+
+  .menu-item {
+    color: #FFFFFF;
+
+    a:hover {
+      background-color: #00008B;
+    }
+
+    a.active {
+      background-color: #00008B;
+    }
+  }
+}
+
+.slide-caption-as-page-title {
+  background: rgba(0, 0, 0, 0.5) !important;
+  position: absolute;
+  padding: 10px;
+  top: 625px;
+  color: #FFFFFF;
+
+  .slide-title {
+    margin: 0 !important;
+    font-family: serif;
+  }
+}
+
 .branding .site-title {
   width: 200px;
   font-size: 16px !important;

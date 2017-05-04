@@ -1,11 +1,13 @@
 class PagesController < ApplicationController
-  layout "application"
+  layout "home"
 
   def home
-    render layout: "home"
   end
 
   def about_us
+  end
+
+  def services
   end
 
 end
