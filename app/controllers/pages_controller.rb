@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  layout "home"
+  layout "application"
 
   def home
   end
@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   end
 
   def services
+  end
+
+  def contact_us
   end
 
 end
